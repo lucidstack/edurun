@@ -12,6 +12,7 @@
     }
 
     body {
+      cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -19,9 +20,11 @@
       background: url(assets/outrun.png);
       background-repeat: no-repeat;
       background-size: cover;
+      background-position-x: 46%;
     }
 
     h1 {
+      cursor: pointer;
       margin: 0;
       margin-bottom: -4rem;
       font-family: 'outrun-future';
@@ -35,6 +38,7 @@
     }
 
     span {
+      cursor: pointer;
       position: absolute;
       overflow: hidden;
       color: #0049ab;
@@ -45,7 +49,7 @@
   </style>
 </head>
 
-<body>
+<body id="body">
   <h1>
     <span>EDUCATION</span>
     EDUCATION
@@ -54,5 +58,15 @@
     <span>IN THE 80'S</span>
     IN THE 80'S
   </h1>
+  <audio id="linkAudio">
+    <source src="assets/caticature.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    document.getElementById("body").addEventListener("click", function () {
+      document.getElementById("linkAudio").play();
+    });
+
+  </script>
 </body>
 </html>
