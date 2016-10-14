@@ -1,4 +1,5 @@
 @import "palette";
+@import "_flexbox";
 
 .chapter {
   padding: 1.414em 10rem 2.414rem 10rem;
@@ -35,26 +36,39 @@
     float: left;
     height: 100%;
     width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox;
+    @include justify-content(center);
+    @include align-items(center);
 
-    img { max-width: 100%; }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
 
     @media only screen and (max-width: 768px) {
-      position: initial;
-      height: 50px;
-      display: block;
+      height: 100px;
+      float: none;
+      width: 100%;
     }
   }
 
   .image--no-rotate {
-    transform: initial;
+    transform: none;
+  }
+
+  .u-only-desktop {
+
   }
 
   .content {
     float: left;
     width: 60%;
+
+    @media only screen and (max-width: 768px) {
+      float: none;
+      width: 100%;
+    }
+
 
     h3 { color: #ffcbe4; }
     p {
@@ -68,10 +82,9 @@
   text-align: right;
   overflow: hidden;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     text-align: left;
   }
-
 }
 
 .chapter-2 {
@@ -84,10 +97,8 @@
   }
 
   .books {
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    height: 300px;
+    margin-top: 150px;
+    margin-right: 100px;
   }
 }
 
@@ -106,11 +117,8 @@
   }
 
   .globe {
-    position: absolute;
-    left: 5%;
-    top: 20%;
-    height: 500px;
-    transform: rotateY(180deg);
+    margin-top: 200px;
+    margin-left: 100px;
   }
 }
 
