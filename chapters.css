@@ -1,0 +1,43 @@
+/* Coolors Exported Palette - coolors.co/03256c-086788-8f31b8-314cb6-5b0254 */
+/* RGB */
+.chapter {
+  padding: 1.414em 15% 2.414rem 15%;
+  position: relative; }
+  .chapter h3 {
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 2px; }
+  .chapter p {
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif; }
+
+.chapter-1 {
+  background-color: #8f31b8;
+  text-align: right; }
+  .chapter-1 h3 {
+    color: #ffcbe4; }
+  .chapter-1 p {
+    color: #fdfdfd;
+    max-width: 65%;
+    margin-left: auto; }
+  .chapter-1 .margaret {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    height: 400px;
+    transform: rotateY(180deg); }
+
+.chapter-2 {
+  background-color: #314cb6;
+  text-align: left; }
+  .chapter-2 h3 {
+    color: #ffcbe4; }
+  .chapter-2 p {
+    color: #fdfdfd;
+    max-width: 65%; }
+  .chapter-2 .crowd {
+    position: absolute;
+    top: 20%;
+    right: -5%;
+    height: 50vh;
+    -webkit-mask-image: -webkit-gradient(linear, right center, left center, from(white), to(rgba(255, 0, 0, 0))); }

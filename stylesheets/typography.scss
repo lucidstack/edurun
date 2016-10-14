@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Asul|Rubik:300,700,900|Space+Mono:400,700|Taviraj:300|Work+Sans');
+
+@font-face {
+  font-family: 'outrun-future';
+  src:  url('assets/outrun-future.ttf.woff') format('woff'),
+  url('assets/outrun-future.ttf.svg#outrun-future') format('svg'),
+  url('assets/outrun-future.ttf.eot'),
+  url('assets/outrun-future.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {font-size: 1em;}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 6.854em;
+}
+
+h2 {font-size: 4.236em;}
+
+h3 {font-size: 2.618em;}
+
+h4 {font-size: 1.618em;}
+
+small, .font_small {font-size: 0.618em;}

@@ -1,0 +1,56 @@
+@import "palette";
+
+.chapter {
+  padding: 1.414em 15% 2.414rem 15%;
+  position: relative;
+
+  h3 {
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 2px;
+  }
+  p {
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif;
+  }
+}
+
+.chapter-1 {
+  background-color: $pink;
+  text-align: right;
+
+  h3 { color: #ffcbe4; }
+  p {
+    color: #fdfdfd;
+    max-width: 65%;
+    margin-left: auto;
+  }
+
+  .margaret {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    height: 400px;
+    transform: rotateY(180deg);
+  }
+}
+
+.chapter-2 {
+  background-color: $lilac;
+  text-align: left;
+
+  h3 { color: #ffcbe4; }
+  p {
+    color: #fdfdfd;
+    max-width: 65%;
+  }
+
+  .crowd {
+    position: absolute;
+    top: 20%;
+    right: -5%;
+    height: 50vh;
+    -webkit-mask-image: -webkit-gradient(linear, right center, left center, from(rgba(255, 255, 255, 1)), to(rgba(255, 0, 0, 0)));
+  }
+}
+
