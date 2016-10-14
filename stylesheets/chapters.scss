@@ -59,12 +59,11 @@
     max-width: 65%;
   }
 
-  .crowd {
+  .books {
     position: absolute;
-    top: 20%;
-    right: -5%;
-    height: 50vh;
-    -webkit-mask-image: -webkit-gradient(linear, right center, left center, from(rgba(255, 255, 255, 1)), to(rgba(255, 0, 0, 0)));
+    top: 25%;
+    right: 5%;
+    height: 300px;
   }
 }
 
