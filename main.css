@@ -116,6 +116,7 @@ html, body {
     transform: rotateY(180deg); }
 
 .chapter-2 {
+  overflow-x: hidden;
   background-color: #314cb6;
   text-align: left; }
   .chapter-2 h3 {
