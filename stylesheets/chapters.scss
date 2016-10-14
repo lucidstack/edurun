@@ -46,9 +46,10 @@
     }
 
     @media only screen and (max-width: 768px) {
-      height: 100px;
       float: none;
+      height: 100px;
       width: 100%;
+      margin-bottom: -40px;
     }
   }
 
@@ -57,7 +58,15 @@
   }
 
   .u-only-desktop {
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
 
+  .u-only-mobile {
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
   }
 
   .content {
@@ -96,15 +105,16 @@
     color: #fdfdfd;
   }
 
-  .books {
-    margin-top: 150px;
-    margin-right: 100px;
+  @media (min-width: 768px) {
+    .books {
+      margin-top: 150px;
+      margin-right: 100px;
+    }
   }
 }
 
 .chapter-3 {
   background-color: $green;
-  text-align: right;
 
   h3 { color: #d1fff9; }
   h4 {
@@ -116,9 +126,13 @@
     color: #fdfdfd;
   }
 
-  .globe {
-    margin-top: 200px;
-    margin-left: 100px;
+  @media (min-width: 768px) {
+    text-align: right;
+
+    .globe {
+      margin-top: 200px;
+      margin-left: 100px;
+    }
   }
 }
 
