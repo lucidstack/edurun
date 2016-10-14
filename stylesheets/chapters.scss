@@ -78,8 +78,6 @@
       width: 100%;
     }
 
-
-    h3 { color: #ffcbe4; }
     p {
       color: #fdfdfd;
     }
@@ -91,6 +89,8 @@
   text-align: right;
   overflow: hidden;
 
+  h3 { color: #ffcbe4; }
+
   @media (max-width: 768px) {
     text-align: left;
   }
@@ -100,7 +100,7 @@
   background-color: $lilac;
   text-align: left;
 
-  h3 { color: #ffcbe4; }
+  h3 { color: #bfdaff; }
   p {
     color: #fdfdfd;
   }
@@ -116,7 +116,7 @@
 .chapter-3 {
   background-color: $green;
 
-  h3 { color: #d1fff9; }
+  h3 { color: #a2d4cb; }
   h4 {
     color: #fffcc6;
     text-align: left;
@@ -141,7 +141,7 @@
   background-color: $magenta;
   text-align: left;
 
-  h3 { color: #fff33b; }
+  h3 { color: #ecdd86; }
   p {
     color: #fdfdfd;
   }

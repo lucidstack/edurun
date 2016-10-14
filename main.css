@@ -150,8 +150,6 @@ html, body {
       .chapter .content {
         float: none;
         width: 100%; } }
-    .chapter .content h3 {
-      color: #ffcbe4; }
     .chapter .content p {
       color: #fdfdfd; }
 
@@ -159,6 +157,8 @@ html, body {
   background-color: #8f31b8;
   text-align: right;
   overflow: hidden; }
+  .chapter-1 h3 {
+    color: #ffcbe4; }
   @media (max-width: 768px) {
     .chapter-1 {
       text-align: left; } }
@@ -167,7 +167,7 @@ html, body {
   background-color: #314cb6;
   text-align: left; }
   .chapter-2 h3 {
-    color: #ffcbe4; }
+    color: #bfdaff; }
   .chapter-2 p {
     color: #fdfdfd; }
   @media (min-width: 768px) {
@@ -178,7 +178,7 @@ html, body {
 .chapter-3 {
   background-color: #086788; }
   .chapter-3 h3 {
-    color: #d1fff9; }
+    color: #a2d4cb; }
   .chapter-3 h4 {
     color: #fffcc6;
     text-align: left;
@@ -197,7 +197,7 @@ html, body {
   background-color: #5b0254;
   text-align: left; }
   .chapter-4 h3 {
-    color: #fff33b; }
+    color: #ecdd86; }
   .chapter-4 p {
     color: #fdfdfd; }
 
