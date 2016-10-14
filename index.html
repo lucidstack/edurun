@@ -1,72 +1,105 @@
 <html>
-<head>
-  <style>
-    @font-face {
-      font-family: 'outrun-future';
-      src:  url('assets/outrun-future.ttf.woff') format('woff'),
-        url('assets/outrun-future.ttf.svg#outrun-future') format('svg'),
-        url('assets/outrun-future.ttf.eot'),
-        url('assets/outrun-future.eot?#iefix') format('embedded-opentype');
-      font-weight: normal;
-      font-style: normal;
-    }
+  <head>
+    <link rel="stylesheet" href="main.css">
+  </head>
 
-    body {
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background: url(assets/outrun.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-x: 46%;
-    }
+  <body id="body">
+    <div class="splash">
+      <h1>
+        <span>EDUCATION</span>
+        EDUCATION
+      </h1>
+      <h1>
+        <span>IN THE 80'S</span>
+        IN THE 80'S
+      </h1>
+    </div>
 
-    h1 {
-      cursor: pointer;
-      margin: 0;
-      margin-bottom: -4rem;
-      font-family: 'outrun-future';
-      font-size: 7rem;
-      position: relative;
-      text-shadow: 5px 5px 1px black;
-      color: #e424c1;
-      letter-spacing: 2px;
-      transform: rotateZ(-4deg);
-      padding: 0 1rem;
-    }
+    <div class="chapter chapter-1">
+      <img class="margaret" src="assets/margaret.png" alt="Margaret Thatcher">
+      <h3>education in the uk</h3>
+      <p>
+        In response to the recession and falling standards of schooling, the conservative government of the time decided to increase the budget of the education system. The conservatives wanted a more centralised and standardised education, that focused on increasing young peoples chances of finding employment.
+      </p>
 
-    span {
-      cursor: pointer;
-      position: absolute;
-      overflow: hidden;
-      color: #0049ab;
-      -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), to(rgba(255, 0, 0, 0)));
-      z-index: 2;
-      padding: 0 0.2rem;
-    }
-  </style>
-</head>
+      <p>
+        In 1980 the education reform act was announced, leading to a compulsory
+        curriculum and the open enrollement of pupils, as well as setting up
+        assessments at the end of each key stage.
+      </p>
 
-<body id="body">
-  <h1>
-    <span>EDUCATION</span>
-    EDUCATION
-  </h1>
-  <h1>
-    <span>IN THE 80'S</span>
-    IN THE 80'S
-  </h1>
-  <audio id="linkAudio">
-    <source src="assets/caticature.mp3" type="audio/mpeg">
-  </audio>
+      <p>
+        1981 saw the push for vocational subjects with Technical and Vocational
+        Education Initiative (TVEI) being announced. However, out of the 25
+        programmes established, 22 were cancelled and in 1986, NVQ’s were
+        created to replace them.
+      </p>
 
-  <script>
-    document.getElementById("body").addEventListener("click", function () {
-      document.getElementById("linkAudio").play();
-    });
+      <p>
+        In 1985 the Better Schools programme was announced, this aimed to raise
+        all standards of ability, promote enterprise and increase employment
+        chances.
+      </p>
 
-  </script>
-</body>
+      <p>
+        Alongside the introduction of the curriculum and league tables, there
+        was the new Ofsted, which forced schools to look into more marketing
+        strategies to help capture pupils, or they would be forced to close.
+      </p>
+
+      <p>
+        These changes led to schools having more autonomy over their budget, as
+        well as giving parents the choice of where to send their children.
+      </p>
+    </div>
+
+    <div class="chapter chapter-2">
+      <img class="crowd" src="assets/crowd.png" alt="Crowd">
+      <h3>education 5 to 9 survey</h3>
+      <p>
+        In 1982, there was a survey published by the Department of Education
+        and Science, which made the following points about primary schools:
+      </p>
+
+      <p>
+        Most primary schools fell between the extremes of very good and very
+        poor, with most offering a good education to children aged between 5
+        and 9. Children’s behaviour and personal relations in schools were
+        developing well.
+      </p>
+
+      <p>
+        In terms of academic achievement, it was found that nearly all children
+        were making a satisfactory start in learning literacy and maths, but
+        that the development of these skills widely varied, and that certain
+        schools were spending too much time on teaching them. It was found that
+        schools are doing a satisfactory job of helping ethnic minorities learn
+        English. On the other hand, mathematical skills are usually practised
+        too much without application.
+      </p>
+
+      <p>
+        Furthermore, despite the fact that the topics and activities are well
+        planned, they are not linked in a way that develops skills and
+        understanding.
+      </p>
+
+      <p>
+        In schools where there are children with learning difficulties, there
+        is a quick turnaround in helping them, but not when it comes to
+        educational psychologists and psychiatrists, meaning they may trail
+        behind. Linking to this, where there are higher achieving children,
+        they are rarely given the help to make more progress. This is a bigger
+        problem in classes that have a mixed age group, where the those on
+        either side of the learning spectrum may suffer some neglect.
+      </p>
+
+      <p>
+        In terms of teaching, there needs to be more in-school training, and
+        more help with teachers who wish to move up the ladder. However, First
+        School teachers need to be checked to ensure they are teaching
+        properly.
+      </p>
+    </div>
+  </body>
 </html>
