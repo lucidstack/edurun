@@ -3,6 +3,11 @@
 .chapter {
   padding: 1.414em 10rem 2.414rem 10rem;
   position: relative;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 768px) {
+    padding: 1.414em 1rem 2.414rem 1rem;
+  }
 
   h3 {
     font-weight: 700;
@@ -23,40 +28,59 @@
     color: #fdfdfd;
     list-style: none;
     margin-bottom: .25rem;
-    max-width: 65%;
-    margin-left: auto;
+  }
+
+  .image {
+    transform: rotateY(180deg);
+    float: left;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img { max-width: 100%; }
+
+    @media only screen and (max-width: 768px) {
+      position: initial;
+      height: 50px;
+      display: block;
+    }
+  }
+
+  .image--no-rotate {
+    transform: initial;
+  }
+
+  .content {
+    float: left;
+    width: 60%;
+
+    h3 { color: #ffcbe4; }
+    p {
+      color: #fdfdfd;
+    }
   }
 }
 
 .chapter-1 {
   background-color: $pink;
   text-align: right;
+  overflow: hidden;
 
-  h3 { color: #ffcbe4; }
-  p {
-    color: #fdfdfd;
-    max-width: 65%;
-    margin-left: auto;
+  @media only screen and (max-width: 768px) {
+    text-align: left;
   }
 
-  .margaret {
-    position: absolute;
-    left: 15%;
-    top: 20%;
-    height: 400px;
-    transform: rotateY(180deg);
-  }
 }
 
 .chapter-2 {
-  overflow-x: hidden;
   background-color: $lilac;
   text-align: left;
 
   h3 { color: #ffcbe4; }
   p {
     color: #fdfdfd;
-    max-width: 65%;
   }
 
   .books {
@@ -71,17 +95,14 @@
   background-color: $green;
   text-align: right;
 
-  h3 { color: #ffcbe4; }
+  h3 { color: #d1fff9; }
   h4 {
     color: #fffcc6;
     text-align: left;
-    max-width: 65%;
     margin-left: auto;
   }
   p {
     color: #fdfdfd;
-    max-width: 65%;
-    margin-left: auto;
   }
 
   .globe {
@@ -90,5 +111,16 @@
     top: 20%;
     height: 500px;
     transform: rotateY(180deg);
+  }
+}
+
+.chapter-4 {
+  overflow-x: hidden;
+  background-color: $magenta;
+  text-align: left;
+
+  h3 { color: #fff33b; }
+  p {
+    color: #fdfdfd;
   }
 }

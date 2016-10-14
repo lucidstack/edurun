@@ -2,7 +2,11 @@
 /* RGB */
 .chapter {
   padding: 1.414em 10rem 2.414rem 10rem;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
+  @media only screen and (max-width: 768px) {
+    .chapter {
+      padding: 1.414em 1rem 2.414rem 1rem; } }
   .chapter h3 {
     font-weight: 700;
     font-family: 'Rubik', sans-serif;
@@ -18,35 +22,47 @@
     font-family: 'Work Sans', sans-serif;
     color: #fdfdfd;
     list-style: none;
-    margin-bottom: .25rem;
-    max-width: 65%;
-    margin-left: auto; }
+    margin-bottom: .25rem; }
+  .chapter .image {
+    transform: rotateY(180deg);
+    float: left;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .chapter .image img {
+      max-width: 100%; }
+    @media only screen and (max-width: 768px) {
+      .chapter .image {
+        position: initial;
+        height: 50px;
+        display: block; } }
+  .chapter .image--no-rotate {
+    transform: initial; }
+  .chapter .content {
+    float: left;
+    width: 60%; }
+    .chapter .content h3 {
+      color: #ffcbe4; }
+    .chapter .content p {
+      color: #fdfdfd; }
 
 .chapter-1 {
   background-color: #8f31b8;
-  text-align: right; }
-  .chapter-1 h3 {
-    color: #ffcbe4; }
-  .chapter-1 p {
-    color: #fdfdfd;
-    max-width: 65%;
-    margin-left: auto; }
-  .chapter-1 .margaret {
-    position: absolute;
-    left: 15%;
-    top: 20%;
-    height: 400px;
-    transform: rotateY(180deg); }
+  text-align: right;
+  overflow: hidden; }
+  @media only screen and (max-width: 768px) {
+    .chapter-1 {
+      text-align: left; } }
 
 .chapter-2 {
-  overflow-x: hidden;
   background-color: #314cb6;
   text-align: left; }
   .chapter-2 h3 {
     color: #ffcbe4; }
   .chapter-2 p {
-    color: #fdfdfd;
-    max-width: 65%; }
+    color: #fdfdfd; }
   .chapter-2 .books {
     position: absolute;
     top: 25%;
@@ -57,19 +73,25 @@
   background-color: #086788;
   text-align: right; }
   .chapter-3 h3 {
-    color: #ffcbe4; }
+    color: #d1fff9; }
   .chapter-3 h4 {
     color: #fffcc6;
     text-align: left;
-    max-width: 65%;
     margin-left: auto; }
   .chapter-3 p {
-    color: #fdfdfd;
-    max-width: 65%;
-    margin-left: auto; }
+    color: #fdfdfd; }
   .chapter-3 .globe {
     position: absolute;
     left: 5%;
     top: 20%;
     height: 500px;
     transform: rotateY(180deg); }
+
+.chapter-4 {
+  overflow-x: hidden;
+  background-color: #5b0254;
+  text-align: left; }
+  .chapter-4 h3 {
+    color: #fff33b; }
+  .chapter-4 p {
+    color: #fdfdfd; }

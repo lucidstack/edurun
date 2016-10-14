@@ -8,7 +8,7 @@ html, body {
 
 .splash {
   cursor: pointer;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,3 +44,18 @@ html, body {
 }
 
 @import "chapters";
+
+footer {
+  margin-top: 0;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 300;
+  line-height: 4;
+  padding-bottom: 2rem;
+  color: #d1fff9;
+  background-color: $blue;
+  text-align: center;
+
+  a {
+    color: #fafafa;
+  }
+}
