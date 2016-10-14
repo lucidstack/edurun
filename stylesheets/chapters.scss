@@ -1,7 +1,7 @@
 @import "palette";
 
 .chapter {
-  padding: 1.414em 15% 2.414rem 15%;
+  padding: 1.414em 10rem 2.414rem 10rem;
   position: relative;
 
   h3 {
@@ -9,9 +9,22 @@
     font-family: 'Rubik', sans-serif;
     letter-spacing: 2px;
   }
+  h4 {
+    font-weight: 400;
+    font-family: 'Space Mono', sans-serif;
+  }
   p {
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Work Sans', sans-serif;
+  }
+  li {
+    font-weight: 200;
+    font-family: 'Work Sans', sans-serif;
+    color: #fdfdfd;
+    list-style: none;
+    margin-bottom: .25rem;
+    max-width: 65%;
+    margin-left: auto;
   }
 }
 
@@ -54,3 +67,28 @@
   }
 }
 
+.chapter-3 {
+  background-color: $green;
+  text-align: right;
+
+  h3 { color: #ffcbe4; }
+  h4 {
+    color: #fffcc6;
+    text-align: left;
+    max-width: 65%;
+    margin-left: auto;
+  }
+  p {
+    color: #fdfdfd;
+    max-width: 65%;
+    margin-left: auto;
+  }
+
+  .globe {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    height: 500px;
+    transform: rotateY(180deg);
+  }
+}

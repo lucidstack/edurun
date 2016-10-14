@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Asul|Rubik:300,700,900|Space+Mono:400,700|Taviraj:300|Work+Sans");
+@import url("https://fonts.googleapis.com/css?family=Asul|Rubik:300,700,900|Space+Mono:400,700|Taviraj:300|Work+Sans:100,200,300,400");
 @font-face {
   font-family: 'outrun-future';
   src: url("assets/outrun-future.ttf.woff") format("woff"), url("assets/outrun-future.ttf.svg#outrun-future") format("svg"), url("assets/outrun-future.ttf.eot"), url("assets/outrun-future.eot?#iefix") format("embedded-opentype");
@@ -78,15 +78,26 @@ html, body {
 /* Coolors Exported Palette - coolors.co/03256c-086788-8f31b8-314cb6-5b0254 */
 /* RGB */
 .chapter {
-  padding: 1.414em 15% 2.414rem 15%;
+  padding: 1.414em 10rem 2.414rem 10rem;
   position: relative; }
   .chapter h3 {
     font-weight: 700;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 2px; }
+  .chapter h4 {
+    font-weight: 400;
+    font-family: 'Space Mono', sans-serif; }
   .chapter p {
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Work Sans', sans-serif; }
+  .chapter li {
+    font-weight: 200;
+    font-family: 'Work Sans', sans-serif;
+    color: #fdfdfd;
+    list-style: none;
+    margin-bottom: .25rem;
+    max-width: 65%;
+    margin-left: auto; }
 
 .chapter-1 {
   background-color: #8f31b8;
@@ -118,3 +129,24 @@ html, body {
     right: -5%;
     height: 50vh;
     -webkit-mask-image: -webkit-gradient(linear, right center, left center, from(white), to(rgba(255, 0, 0, 0))); }
+
+.chapter-3 {
+  background-color: #086788;
+  text-align: right; }
+  .chapter-3 h3 {
+    color: #ffcbe4; }
+  .chapter-3 h4 {
+    color: #fffcc6;
+    text-align: left;
+    max-width: 65%;
+    margin-left: auto; }
+  .chapter-3 p {
+    color: #fdfdfd;
+    max-width: 65%;
+    margin-left: auto; }
+  .chapter-3 .globe {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    height: 500px;
+    transform: rotateY(180deg); }
